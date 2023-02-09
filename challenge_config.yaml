@@ -19,13 +19,25 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Accuracy Score", "Precision", "Recall", "F1 Score"],
+        "labels": ["Accuracy Score", "Precision", "Recall", "F1 score"],
         "default_order_by": "Accuracy Score",
         "metadata": {
           "Accuracy Score": {
             "sort_ascending": True,
-            "description": "Penilaian keseluruhan",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           },
+          "Precision": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+          "Recall": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+          "F1 score": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
         }
       }
 

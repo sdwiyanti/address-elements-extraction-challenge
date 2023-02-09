@@ -13,12 +13,15 @@ def run():
     sys.path.append("{}".format(current_working_directory))
     sys.path.append("{}/challenge_data/challenge_1".format(current_working_directory))
 
+    # dataset={}
+
+
     challenge_id = 1
-    challenge_phase = "test"  # Add the challenge phase codename to be tested
-    annotation_file_path = "{}/annotations/test_annotations_testsplit.json".format(
+    challenge_phase = "train"  # Add the challenge phase codename to be tested
+    annotation_file_path = "{}/annotations/data.csv".format(
         current_working_directory
     )  # Add the test annotation file path
-    user_submission_file_path = "{}/submission.json".format(
+    user_submission_file_path = "{}/submission.csv".format(
         current_working_directory
     )  # Add the sample submission file path
 
@@ -48,12 +51,13 @@ def run():
         "id": 123,
         "submitted_at": u"2017-03-20T19:22:03.880652Z",
     }
-    EVALUATION_SCRIPTS[challenge_id].evaluate(
+    evaluation_script = EVALUATION_SCRIPTS[challenge_id].evaluate(
         annotation_file_path,
         user_submission_file_path,
         challenge_phase,
         submission_metadata=submission_metadata,
     )
+    print(evaluation_script)
     print("Evaluated Successfully!")
 
 
