@@ -19,10 +19,10 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Score"],
-        "default_order_by": "Score",
+        "labels": ["Accuracy Score", "Precision", "Recall", "F1 Score"],
+        "default_order_by": "Accuracy Score",
         "metadata": {
-          "Score": {
+          "Accuracy Score": {
             "sort_ascending": True,
             "description": "Penilaian keseluruhan",
           },
