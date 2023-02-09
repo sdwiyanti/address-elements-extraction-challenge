@@ -29,15 +29,15 @@ leaderboard:
           "Precision": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }
+          },
           "Recall": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }
+          },
           "F1 score": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          }
+          },
         }
       }
 
