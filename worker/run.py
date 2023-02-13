@@ -57,6 +57,7 @@ def run():
     print(challenge_module)
     print(evaluation_script)
     print("Evaluated Successfully!")
+    print("Finish!!")
 
 
 if __name__ == "__main__":
