@@ -13,11 +13,8 @@ def run():
     sys.path.append("{}".format(current_working_directory))
     sys.path.append("{}/challenge_data/challenge_1".format(current_working_directory))
 
-    # dataset={}
-
-
     challenge_id = 1
-    challenge_phase = "train"  # Add the challenge phase codename to be tested
+    challenge_phase = "final"  # Add the challenge phase codename to be tested
     annotation_file_path = "{}/annotations/data.csv".format(
         current_working_directory
     )  # Add the test annotation file path
@@ -57,6 +54,7 @@ def run():
         challenge_phase,
         submission_metadata=submission_metadata,
     )
+    print(challenge_module)
     print(evaluation_script)
     print("Evaluated Successfully!")
 
