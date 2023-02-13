@@ -84,6 +84,7 @@ In order to test the evaluation script locally before uploading it to [EvalAI](h
 
 3. Run the command `python -m worker.run` from the directory where `annotations/` `challenge_data/` and `worker/` directories are present. If the command runs successfully, then the evaluation script works locally and will work on the server as well.
 
-## Facing problems in creating a challenge?
+## Facing problems in creating a challenge
 
 Please feel free to open issues on our [GitHub Repository](https://github.com/Cloud-CV/EvalAI-Starter/issues) or contact us at team@cloudcv.org if you have issues.
+
