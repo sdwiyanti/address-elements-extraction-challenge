@@ -24,19 +24,24 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     accuracy = correct_predictions / total_predictions
 
     output = {}
-    if phase_codename == "train":
-        print("Evaluating for Dev Phase")
-        output["result"] = [
-            {
-                "train_split": {
-                    'Accuracy Score': accuracy,
-                    'Precision' : precision,
-                    'Recall' : recall,
-                    'F1 score' : f1_score,
+    
+    if phase_codename == "final":
+        print("Evaluating for Final Phase")
+        try:
+            output["result"] = [
+                {
+                    "test_split": {
+                        'Accuracy Score': accuracy,
+                        'Precision' : precision,
+                        'Recall' : recall,
+                        'F1 score' : f1_score,
+                    }
                 }
-            }
-        ]
-        # To display the results in the result file
-        output["submission_result"] = output["result"][0]["train_split"]
-        print("Completed evaluation for Dev Phase")
-    return output
+            ]
+            # To display the results in the result file
+            output["submission_result"] = output["result"][0]["train_split"]
+            print("Completed evaluation for Dev Phase")
+            return output
+        except Exception as e:
+            sys.stderr.write(traceback.format_exc())
+            return e
