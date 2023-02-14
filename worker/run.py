@@ -18,7 +18,7 @@ def run():
     annotation_file_path = "{}/annotations/data.csv".format(
         current_working_directory
     )  # Add the test annotation file path
-    user_submission_file_path = "{}/submission.csv".format(
+    user_submission_file_path = "{}/user_annotation.csv".format(
         current_working_directory
     )  # Add the sample submission file path
 
